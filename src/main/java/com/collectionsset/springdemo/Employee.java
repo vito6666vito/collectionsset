@@ -19,6 +19,10 @@ public class Employee {
         return firstName;
     }
 
+    public String getFullName() {
+        return firstName + " " + secondName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -34,7 +38,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employe{" +
+        return "Employee{" +
                 "firstName='" + firstName + '\'' +
                 ", secondName='" + secondName + '\'' +
                 '}';
